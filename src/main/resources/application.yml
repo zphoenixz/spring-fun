@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-fun-service
+  profiles:
+    active: prod
+
+server:
+  port: 8081

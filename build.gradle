@@ -1,0 +1,37 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.1'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.phoenix'
+version = "${springFunVersion}"
+
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+//tasks.jar {
+//	manifest {
+//		archiveFileName.set("spring-fun.jar")
+//	}
+//}
+
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation "org.springframework.boot:spring-boot-starter-web"
+	testImplementation "org.springframework.boot:spring-boot-starter-test"
+	implementation "org.springframework.boot:spring-boot-starter-data-mongodb:${starterMongoDBVersion}"
+	implementation "org.springframework.data:spring-data-mongodb:${dataMongoDBVersion}"
+//	implementation "org.springframework.boot:spring-boot-starter-log4j2:${log4j2Version}"
+//	implementation "jakarta.xml.bind:jakarta.xml.bind-api:${jakartaVersion}"
+	implementation "org.springframework.boot:spring-boot-starter-validation:${springValidationVersion}"
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

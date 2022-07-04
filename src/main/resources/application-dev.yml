@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27020
+      database: blaze-db
+
+taxes:
+  city: 0.1
+  county: 0.05
+  state: 0.08
+  federal: 0.02
+
+server:
+  port: 8081
