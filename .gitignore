@@ -35,5 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+deploy-instructions.txt
 ./deploy-instructions.txt
-./src/main/resources/application-prod.yml
+src/main/resources/application-prod.yml
